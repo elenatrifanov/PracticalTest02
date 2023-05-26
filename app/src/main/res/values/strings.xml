@@ -9,10 +9,12 @@
     <string name="city">City</string>
     <string name="information_type">Information Type</string>
     <string name="get_weather_forecast">Get Weather Forecast</string>
-    <string name="operator1">Operator 1</string>
-    <string name="operator2">Operator 2\n</string>
+    <string name="currency">Currency</string>
+    <string name="get_currency_info">GET CURRENCY INFO</string>
     <string name="SUMA">SUMA</string>
     <string name="MUL">MUL</string>
+    <string name="operator1">Operator 1\n</string>
+    <string name="operator2">Operator 2\n</string>
     <string-array name="information_types">
         <item>temperature</item>
         <item>wind_speed</item>
