@@ -63,14 +63,14 @@ public class CommunicationThread extends Thread {
             if (Objects.equals(operation_type, "mul")) {
                 Thread.sleep(2000);
                 Integer int1 = Integer.parseInt(operator1) * Integer.parseInt(operator2);
-                if ((Integer.parseInt(operator1) != 0 || Integer.parseInt(operator2) !=0) && int1 == 0)
+                if (int1 == Integer.MIN_VALUE || int1 < Integer.parseInt(operator1) || int1 < Integer.parseInt(operator2))
                     result = "overflow";
                 else
                     result = int1.toString();
             }
             if (Objects.equals(operation_type, "sum")) {
                 Integer int1 = Integer.parseInt(operator1) + Integer.parseInt(operator2);
-                if ((Integer.parseInt(operator1) != 0 && Integer.parseInt(operator2) !=0) && int1 == 0)
+                if (int1 == Integer.MIN_VALUE || int1 < Integer.parseInt(operator1) || int1 < Integer.parseInt(operator2))
                     result = "overflow";
                 else
                     result = int1.toString();
